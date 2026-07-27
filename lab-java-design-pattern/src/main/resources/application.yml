@@ -1,0 +1,14 @@
+﻿server:
+  port: 8084
+
+spring:
+  application:
+    name: lab-java-design-pattern
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Design Patterns
+# Description: Singleton, Factory, Strategy, Observer, and more
+# Add middleware-specific configuration below

@@ -1,0 +1,14 @@
+﻿server:
+  port: 8082
+
+spring:
+  application:
+    name: lab-java-concurrent
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Java Concurrent
+# Description: Thread Pool, CompletableFuture, Locks, Concurrent Utilities
+# Add middleware-specific configuration below

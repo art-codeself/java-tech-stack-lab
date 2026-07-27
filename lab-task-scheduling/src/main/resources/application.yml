@@ -1,0 +1,14 @@
+﻿server:
+  port: 8122
+
+spring:
+  application:
+    name: lab-task-scheduling
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Task Scheduling
+# Description: Spring Scheduled, Quartz
+# Add middleware-specific configuration below

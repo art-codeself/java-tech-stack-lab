@@ -1,0 +1,30 @@
+﻿server:
+  port: 8093
+
+spring:
+  application:
+    name: lab-elasticsearch
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  elasticsearch:
+    uris: http://localhost:9200
+
+logging:
+  level:
+    com.codeself.lab.elasticsearch: debug
+server:
+  port: 8093
+
+spring:
+  application:
+    name: lab-elasticsearch
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Elasticsearch
+# Description: Index, Full-text Search, Aggregation
+# Add middleware-specific configuration below

@@ -1,0 +1,14 @@
+﻿server:
+  port: 8112
+
+spring:
+  application:
+    name: lab-spring-cloud
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Spring Cloud
+# Description: Nacos, Gateway, Feign, Sentinel
+# Add middleware-specific configuration below

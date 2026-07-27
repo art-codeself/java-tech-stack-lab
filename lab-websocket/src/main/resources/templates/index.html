@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Lab - ' + ${title}">Lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 0; }
+        .card-demo { transition: transform 0.2s; cursor: pointer; }
+        .card-demo:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-code-slash"></i> Java Tech Stack Lab</a>
+        <span class="navbar-text text-light" th:text="${module}"></span>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="container">
+        <h1 th:text="${title}">Module Title</h1>
+        <p class="lead" th:text="${description}">Module Description</p>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card card-demo h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-play-circle"></i> Getting Started</h5>
+                    <p class="card-text">Basic examples to get you started with this module.</p>
+                    <a href="#" class="btn btn-outline-primary">Explore</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card card-demo h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-gear"></i> Advanced</h5>
+                    <p class="card-text">Advanced usage patterns and best practices.</p>
+                    <a href="#" class="btn btn-outline-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card card-demo h-100">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-lightning"></i> Practice</h5>
+                    <p class="card-text">Hands-on exercises to reinforce your understanding.</p>
+                    <a href="#" class="btn btn-outline-success">Practice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="mt-5 py-3 bg-dark text-center text-light">
+    <small>Java Tech Stack Lab &copy; 2024 | Spring Boot 2.7.18</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

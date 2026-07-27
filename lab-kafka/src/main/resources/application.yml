@@ -1,0 +1,40 @@
+﻿server:
+  port: 8101
+
+spring:
+  application:
+    name: lab-kafka
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+    consumer:
+      group-id: lab-kafka-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+
+logging:
+  level:
+    com.codeself.lab.kafka: debug
+server:
+  port: 8101
+
+spring:
+  application:
+    name: lab-kafka
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Kafka
+# Description: Producer, Consumer, Partition, Consumer Group
+# Add middleware-specific configuration below

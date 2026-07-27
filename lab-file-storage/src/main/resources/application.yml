@@ -1,0 +1,39 @@
+﻿server:
+  port: 8123
+
+spring:
+  application:
+    name: lab-file-storage
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+# MinIO configuration
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: lab-storage
+
+logging:
+  level:
+    com.codeself.lab.storage: debug
+server:
+  port: 8123
+
+spring:
+  application:
+    name: lab-file-storage
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: File Storage
+# Description: MinIO Upload/Download
+# Add middleware-specific configuration below

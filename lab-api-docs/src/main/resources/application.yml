@@ -1,0 +1,14 @@
+﻿server:
+  port: 8124
+
+spring:
+  application:
+    name: lab-api-docs
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: API Docs
+# Description: Swagger / Knife4j Documentation
+# Add middleware-specific configuration below

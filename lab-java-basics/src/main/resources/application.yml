@@ -1,0 +1,14 @@
+﻿server:
+  port: 8081
+
+spring:
+  application:
+    name: lab-java-basics
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Java Basics
+# Description: Collections, Generics, Reflection, Annotations, Stream API
+# Add middleware-specific configuration below

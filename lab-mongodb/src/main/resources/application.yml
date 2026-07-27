@@ -1,0 +1,31 @@
+﻿server:
+  port: 8092
+
+spring:
+  application:
+    name: lab-mongodb
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/lab_mongodb
+
+logging:
+  level:
+    com.codeself.lab.mongodb: debug
+server:
+  port: 8092
+
+spring:
+  application:
+    name: lab-mongodb
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: MongoDB
+# Description: CRUD, Aggregation, GridFS
+# Add middleware-specific configuration below

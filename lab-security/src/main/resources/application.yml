@@ -1,0 +1,33 @@
+﻿server:
+  port: 8120
+
+spring:
+  application:
+    name: lab-security
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# JWT configuration
+jwt:
+  secret: lab-security-jwt-secret-key-2024-codeself
+  expiration: 86400000
+
+logging:
+  level:
+    com.codeself.lab.security: debug
+server:
+  port: 8120
+
+spring:
+  application:
+    name: lab-security
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Spring Security
+# Description: Authentication, Authorization, JWT, OAuth2
+# Add middleware-specific configuration below

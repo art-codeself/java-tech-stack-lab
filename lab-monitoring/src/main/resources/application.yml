@@ -1,0 +1,44 @@
+﻿server:
+  port: 8125
+
+spring:
+  application:
+    name: lab-monitoring
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Actuator + Prometheus configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    tags:
+      application: ${spring.application.name}
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com.codeself.lab.monitoring: debug
+server:
+  port: 8125
+
+spring:
+  application:
+    name: lab-monitoring
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Monitoring
+# Description: Actuator, Prometheus, Grafana
+# Add middleware-specific configuration below

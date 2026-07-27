@@ -1,0 +1,14 @@
+﻿server:
+  port: 8111
+
+spring:
+  application:
+    name: lab-netty
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: Netty
+# Description: TCP/UDP Server/Client, Custom Protocol
+# Add middleware-specific configuration below

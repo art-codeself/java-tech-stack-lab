@@ -1,0 +1,14 @@
+﻿server:
+  port: 8121
+
+spring:
+  application:
+    name: lab-websocket
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+# Module: WebSocket
+# Description: Real-time Communication, Chat Room, Message Push
+# Add middleware-specific configuration below

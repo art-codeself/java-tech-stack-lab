@@ -1,0 +1,47 @@
+package com.codeself.lab.common.result;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+/**
+ * Unified API response wrapper.
+ */
+@Data
+public class R<T> implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    private int code;
+    private String message;
+    private T data;
+
+    private R() {}
+
+    public static <T> R<T> ok() {
+        return ok(null);
+    }
+
+    public static <T> R<T> ok(T data) {
+        R<T> r = new R<>();
+        r.setCode(ResultCode.SUCCESS.getCode());
+        r.setMessage(ResultCode.SUCCESS.getMessage());
+        r.setData(data);
+        return r;
+    }
+
+    public static <T> R<T> fail(String message) {
+        return fail(ResultCode.FAIL.getCode(), message);
+    }
+
+    public static <T> R<T> fail(int code, String message) {
+        R<T> r = new R<>();
+        r.setCode(code);
+        r.setMessage(message);
+        return r;
+    }
+
+    public static <T> R<T> fail(ResultCode resultCode) {
+        return fail(resultCode.getCode(), resultCode.getMessage());
+    }
+}
