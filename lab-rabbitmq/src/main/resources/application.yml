@@ -22,17 +22,6 @@ spring:
 logging:
   level:
     com.codeself.lab.rabbitmq: debug
-server:
-  port: 8100
-
-spring:
-  application:
-    name: lab-rabbitmq
-  thymeleaf:
-    cache: false
-    prefix: classpath:/templates/
-    suffix: .html
 
 # Module: RabbitMQ
 # Description: Simple Queue, Work Queue, Pub/Sub, Routing, Topic
-# Add middleware-specific configuration below

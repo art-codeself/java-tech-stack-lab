@@ -26,3 +26,5 @@ replay_pid*
 .qoder
 openspec/
 target/
+.codegraph
+.idea
